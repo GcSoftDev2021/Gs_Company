@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body style="background-color:lightblue">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Home/Inicio" style="color:white; font-weight:bold">GS Company</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                            Inicio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Usuario/InformacionUsuario')">Información Usuario</a></li>
+                            <li><a class="dropdown-item" href="javascript:CerrarSesion()">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                            Empresa
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Empresa/Empresa')">Empresa</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Sucursal/Sucursal')">Sucursal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                            Empleado
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Empleado/Empleado')">Empleado</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/DiaLaborado/DiaLaborado')">Dia Laborado</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/HoraExtra/'HoraExtra)">Hora Extra</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Permiso/'Permiso)">Permiso</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Prestamo/'Prestamo)">Prestamo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">Administración</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/UsersManagement/Users')">Usuario</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/UsersManagement/PermisoUsers')">Permiso</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/UsersManagement/RolUsers')">Rol</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Modulo/Modulo')">Modulo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Pais/Pais')">País</a></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/Ciudad/Ciudad')">Ciudad</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="javascript:IrPagina('/TipoDocumento/TipoDocumento')">Tipo Documento</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container body-content" style="margin-top:30px">
+        @RenderBody()
+        @*<hr />*@
+        @*<footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>*@
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

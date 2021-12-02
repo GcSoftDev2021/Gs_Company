@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Editar Sucursal";
+}
+
+<h2>Editar Sucursal</h2>
+
+
+<div style="text-align:end">
+    <a class="btn btn-light btn-sm" href="/Sucursal/Sucursal">Volver</a>
+    <a class="btn btn-success btn-sm" href="/Sucursal/CrearSucursal">Nueva Sucursal</a>
+    <a class="btn btn-warning btn-sm" href="/Sucursal/ListaSucursales">Ver Sucursales</a>
+</div>
+
+<h2>Nueva Sucursal</h2>
+
+<table class="table table-borderless">
+    <tr>
+        <td style="width:50%">
+            <span>Empresa</span>
+            <select class="form-control" style="min-width:100%">
+                <option value="-1">Seleccione ...</option>
+            </select>
+        </td>
+        <td style="width:50%">
+            <span>Nombre Sucursal</span>
+            <input class="form-control" type="text" name="name" value="" style="min-width:100%" autocomplete="off" />
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+            <span>Email</span>
+            <input class="form-control" type="text" name="name" value="" style="min-width:100%" autocomplete="off" />
+        </td>
+        <td style="width:50%">
+            <span>Telefono</span>
+            <input class="form-control" type="text" name="name" value="" style="min-width:100%" autocomplete="off" />
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+            <span>Dirección</span>
+            <input class="form-control" type="text" name="name" value="" style="min-width:100%" autocomplete="off" />
+        </td>
+        <td style="width:50%">
+            <span>Ciudad</span>
+            <select class="form-control" style="min-width:100%">
+                <option value="-1">Seleccione ...</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+            <span>Nombre Contacto</span>
+            <input class="form-control" type="text" name="name" value="" style="min-width:100%" autocomplete="off" />
+        </td>
+        <td style="width:50%">
+            <span>Estado</span>
+            <select class="form-control" style="min-width:100%">
+                <option value="0">Inactiva</option>
+                <option value="1">Activa</option>
+            </select>
+        </td>
+    </tr>
+    </table>
+
+    <table class="table table-borderless">
+        <tr>
+            <td style="width:50%">
+                <button class="btn btn-success">Guardar Cambios</button>
+            </td>
+        </tr>
+    </table>
